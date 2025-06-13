@@ -26,7 +26,7 @@ ReactMovieApp is a web application that allows users to discover and search for 
 2.  Navigate to the project directory:
 
     ```bash
-    cd my-first-react-app
+    cd react-app
     ```
 
 3.  Install dependencies:
@@ -47,7 +47,7 @@ ReactMovieApp is a web application that allows users to discover and search for 
 
     *   Set up an Appwrite account and create a new project.
     *   Create a database and a collection in Appwrite.
-    *   Add `https://mhtbtanvir.github.io` as a platform in your Appwrite project settings (Platforms -> Add Web App). This is crucial for CORS to work correctly.
+    *   Add * as  platform in your Appwrite project settings (Platforms -> Add Web App). This is crucial for CORS to work correctly.Gave me a hard time as this           was my first deploy.
     *   Update the `src/appwrite.js` file with your Appwrite project ID, database ID, and collection ID.
 
 ## Usage
@@ -67,7 +67,29 @@ ReactMovieApp is a web application that allows users to discover and search for 
 
 
 
-<pre>```📁 Project Structure├── public/│   ├── hero-bg.png           # Background image│   └── vite.svg              # Vite logo├── src/│   ├── components/│   │   ├── MovieCard.jsx     # Component for displaying movie information│   │   ├── Search.jsx        # Search bar component│   │   └── Spinner.jsx       # Loading spinner component│   ├── App.jsx               # Main application component│   ├── appwrite.js           # Appwrite configuration and functions│   ├── index.css             # Global styles│   └── main.jsx              # Entry point for the React application├── .env                      # Environment variables├── tailwind.config.js        # Tailwind CSS configuration├── vite.config.js            # Vite configuration├── package.json              # Project dependencies and scripts├── README.md                 # Project documentation└── ...```</pre>
+```text
+react-app/
+├── public/
+│   ├── hero-bg.png         # Background image
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── MovieCard.jsx   # Component for displaying movie information
+│   │   ├── Search.jsx      # Search bar component
+│   │   └── Spinner.jsx     # Loading spinner component
+│   ├── App.jsx             # Main application component
+│   ├── appwrite.js         # Appwrite configuration and functions
+│   ├── index.css           # Global styles
+│   └── main.jsx            # Entry point for the React application
+├── .env                    # Environment variables
+├── tailwind.config.js      # Tailwind CSS configuration
+├── vite.config.js          # Vite configuration
+├── package.json            # Project dependencies and scripts
+├── README.md               # This file
+└── 
+ ```
+
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
