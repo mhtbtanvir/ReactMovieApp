@@ -117,7 +117,7 @@ const App = () => {
 
           )}
 
-          <h2 >All <span className="text-gradient ">Movies</span> </h2>
+          <h2 >Popular <span className="text-gradient ">Movies</span> </h2>
           {loading ? (
             <Spinner />
           )
