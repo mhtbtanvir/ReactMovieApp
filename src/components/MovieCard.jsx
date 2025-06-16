@@ -21,7 +21,7 @@ const MovieCard = ({ movie:
                     </div>
                     <span>•</span>
                     <p className='lang'>{original_language}</p>
-                    <span>⁃ </span>
+                    <span> • </span>
                     <p className='year'>{release_date ? release_date : "N/A"}</p>
 
                 </div>

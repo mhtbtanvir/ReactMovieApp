@@ -24,7 +24,7 @@ const App = () => {
   // Use the useDebounce hook to debounce the search term
   useDebounce(() =>
     setDebouncedSearchTerm(searchTerm),
-    900, [searchTerm]);
+    1300, [searchTerm]);
 
   // Fetch popular movies from the API
   const fetchmovies = async (query = '') => {
@@ -96,15 +96,17 @@ const App = () => {
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
         </header>
-        <section className="all-movies">
+        
           {trendingMovies.length > 0 && (
-            <section className='trending'>
+
+            <section className='trending '>
               <h2>Most Searched</h2>
-              <ul>
+              
+              <ul >
                 {trendingMovies.map((movie, index) => (
                   <li key={movie.$id}>
                     <p>{index + 1}</p>
-                    <img src={movie.poster_url} alt="{movie.title}" />
+                    <img src={movie.poster_url} alt={movie.title} />
 
 
                   </li>
@@ -116,7 +118,7 @@ const App = () => {
             </section>
 
           )}
-
+        <section className="all-movies">
           <h2 >All <span className="text-gradient ">Movies</span> </h2>
           {loading ? (
             <Spinner />

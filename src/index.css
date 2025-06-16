@@ -17,8 +17,7 @@
 
   --breakpoint-xs: 480px;
 
-  --background-image-hero-pattern: url("/hero-bg.jpg");
-
+  --background-image-hero-pattern: url("/hero-bg.png");
 }
 
 @layer base {
@@ -59,14 +58,14 @@
   }
 
   .trending {
-    @apply mt-5;
+    @apply mt-20;
 
     & ul {
       @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
     }
 
     & ul li {
-      @apply min-w-[20px] flex flex-row items-center;
+      @apply min-w-[230px] flex flex-row items-center;
     }
 
     & ul li p {
@@ -74,7 +73,7 @@
     }
 
     & ul li img {
-      @apply w-[147px] h-[203px] rounded-lg object-cover -ml-3.5;
+      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
     }
   }
 
@@ -103,7 +102,7 @@
   }
 
   .movie-card {
-    @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/20;
+    @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
 
     & img {
       @apply rounded-lg h-auto w-full;
