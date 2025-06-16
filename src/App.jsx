@@ -118,8 +118,13 @@ const App = () => {
             </section>
 
           )}
+<<<<<<< HEAD
         <section className="all-movies">
           <h2 >All <span className="text-gradient ">Movies</span> </h2>
+=======
+
+          <h2 >Popular <span className="text-gradient ">Movies</span> </h2>
+>>>>>>> af68eb9e28e91efd8bcf4f2af8b33f12ad5bfa50
           {loading ? (
             <Spinner />
           )
