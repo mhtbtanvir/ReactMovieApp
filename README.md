@@ -12,7 +12,7 @@ ReactMovieApp is a web application that allows users to discover and search for 
 *   JavaScript
 *   Tailwind CSS
 *   Vite
-*   Appwrite
+*   Superbase
 *   TMDB API
 
 ## Setup/Installation
@@ -43,12 +43,11 @@ ReactMovieApp is a web application that allows users to discover and search for 
 
     Replace `YOUR_TMDB_API_KEY` with your actual TMDB API key. You can obtain one from [https://www.themoviedb.org/](https://www.themoviedb.org/).
 
-5.  Configure Appwrite:
+5.  Configure Superbase:
 
-    *   Set up an Appwrite account and create a new project.
-    *   Create a database and a collection in Appwrite.
-    *   Add * as  platform in your Appwrite project settings (Platforms -> Add Web App). This is crucial for CORS to work correctly.Gave me a hard time as this           was my first deploy.
-    *   Update the `src/appwrite.js` file with your Appwrite project ID, database ID, and collection ID.
+    *   Set up an Superbase account and create a new project.
+    *   Create a database and table in Superbase.
+    * Adjust policies For Insert,Select,Update
 
 ## Usage
 
@@ -78,7 +77,7 @@ react-app/
 │   │   ├── Search.jsx      # Search bar component
 │   │   └── Spinner.jsx     # Loading spinner component
 │   ├── App.jsx             # Main application component
-│   ├── appwrite.js         # Appwrite configuration and functions
+│   ├── superbase.js         # Appwrite configuration and functions
 │   ├── index.css           # Global styles
 │   └── main.jsx            # Entry point for the React application
 ├── .env                    # Environment variables
