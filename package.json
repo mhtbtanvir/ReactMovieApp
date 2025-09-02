@@ -13,10 +13,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.56.1",
     "@tailwindcss/vite": "^4.1.10",
     "appwrite": "^18.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.8.2",
     "react-use": "^17.6.0",
     "tailwindcss": "^4.1.10",
     "use": "^3.1.1"
